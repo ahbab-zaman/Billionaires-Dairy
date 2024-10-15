@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billionaires Dairy</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
@@ -32,95 +39,95 @@
     </script>
   </head>
   <body class="font-inter">
-
     <main class="flex">
-      <div class="w-1/4 p-4 border bg-[#0E1B34]">
+      <div class="fixed w-1/4 p-2 border bg-[#0E1B34] h-full">
         <div class="text-center">
           <h2 class="text-2xl font-bold text-[#D9D9D9]">Billionaire</h2>
           <h5 class="text-2xl text-[#d9d9d9a1]">Dairy</h5>
         </div>
 
-        <div class="flex flex-col justify-center items-center space-y-4 mx-auto mt-8">
-            <button onclick="userBtn()" id="user-btn" class="btn bg-gray-300 w-[90%] mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Add a user</h4>
-                <p class="text-sm">(Randomly)</p>
-                </div>
-            </button>
-        
-            <button class="btn w-[90%] bg-gray-300 mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Double Money</h4>
-               
-                </div>
-            </button>
-        
-            <button class="btn w-[90%] bg-gray-300 mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Sort By Bank</h4>
-                <p class="text-sm">(Descending)</p>
-                </div>
-            </button>
-        
-            <button class="btn w-[90%] bg-gray-300 mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Calculate Entire Wealth</h4>
-                </div>
-            </button>
-        
-           
-            
-
-        </div>
-
-        <div class="py-4 mt-8">
-            <img class="w-full" src="./images/icons/divider.png" alt="">
-        </div>
-
-
-        <div class="flex flex-col justify-center items-center space-y-4 mx-auto mt-8">
-            <button class="btn bg-gray-300 w-[90%] mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Show All Billionaires</h4>
-                </div>
-            </button>
-
-            <button class="btn bg-gray-300 w-[90%] mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Richest By Industry</h4>
-                <p class="text-sm">(Technology)</p>
-                </div>
-            </button>
-
-            <button class="btn bg-gray-300 w-[90%] mx-auto">
-                <div>
-                    <h4 class="text-lg font-bold">Richest By States</h4>
-                <p class="text-sm">(Texas)</p>
-                </div>
-            </button>
+        <div
+          class="flex flex-col justify-center items-center space-y-4 mx-auto mt-4"
+        >
+          <button id="user-btn" class="btn bg-gray-300 w-[90%] mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Add a user</h4>
+              <p class="text-sm">(Randomly)</p>
             </div>
+          </button>
+
+          <button class="btn w-[90%] bg-gray-300 mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Double Money</h4>
+            </div>
+          </button>
+
+          <button class="btn w-[90%] bg-gray-300 mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Sort By Bank</h4>
+              <p class="text-sm">(Descending)</p>
+            </div>
+          </button>
+
+          <button class="btn w-[90%] bg-gray-300 mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Calculate Entire Wealth</h4>
+            </div>
+          </button>
+        </div>
+
+        <div class="py-2 my-2">
+          <img class="w-full" src="./images/icons/divider.png" alt="" />
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center space-y-4 mx-auto"
+        >
+          <button class="btn bg-gray-300 w-[90%] mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Show All Billionaires</h4>
+            </div>
+          </button>
+
+          <button class="btn bg-gray-300 w-[90%] mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Richest By Industry</h4>
+              <p class="text-sm">(Technology)</p>
+            </div>
+          </button>
+
+          <button class="btn bg-gray-300 w-[90%] mx-auto">
+            <div>
+              <h4 class="text-lg font-bold">Richest By States</h4>
+              <p class="text-sm">(Texas)</p>
+            </div>
+          </button>
+        </div>
       </div>
 
-      <div class="w-3/4">
+      <div class="w-3/4 ml-auto">
+        <div
+          class="flex justify-between items-center px-8 py-4 bg-[#FCFAFA] sticky top-0 z-10"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="bg-[#FCFAFA] focus:outline-none border-b-2 border-gray-400"
+          />
 
-        <div class="flex justify-between items-center px-8 py-4 bg-[#FCFAFA]">
-                <input 
-                type="text" 
-                placeholder="Search"
-                class="bg-[#FCFAFA] focus:outline-none border-b-2 border-gray-400"
-              />
-
-                <img class="w-[50px]" src="./images/logo/logo1.png" alt="">
-          
+          <img class="w-[50px]" src="./images/logo/logo1.png" alt="" />
         </div>
 
+        <div id="spinner-container" class="hidden justify-center py-6">
+          <span class="loading loading-bars loading-lg"></span>
+        </div>
 
-        <div class="mt-12">
-          <div class="overflow-x-auto">
+        <div id="table-container" class="mt-8 py-4">
+          <div class="overflow-y-auto px-7">
             <table class="table">
               <!-- head -->
               <thead>
-                <tr>
+                <tr class="text-xl font-bold text-gray-900">
                   <th>Person</th>
                   <th>Citizenship</th>
                   <th>Industry</th>
@@ -128,18 +135,39 @@
                   <th>Wealth</th>
                 </tr>
               </thead>
-              <tbody id="table-body">
-              </tbody>
+              <tbody id="table-body"></tbody>
             </table>
+
+            <div class="flex justify-end py-4 pr-6">
+              <button
+                onclick="showAllData()"
+                id="show-button"
+                class="btn btn-error"
+              >
+                Show All
+              </button>
+            </div>
           </div>
         </div>
-
-
-
-
-
       </div>
-      
+
+
+      <!-- Biography modal -->
+
+      <div id="bio-modal">
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </div>
     </main>
 
     <script src="JS/script.js"></script>
